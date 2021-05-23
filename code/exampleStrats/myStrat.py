@@ -2,6 +2,12 @@ __author__ = "Jai Wargacki"
 
 
 def strategy(history, memory):
+    """
+    Strategy that can consistently beat the provided 9 strategies.
+    :param history: history of move choices.
+    :param memory: memory consisting of decision code and number of turns on the code.
+    :return: the new choice and memory
+    """
     length = history.shape[1]
 
     if length == 1:
